@@ -1,0 +1,165 @@
+
+html, body {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    }
+    
+    h1, h2, h3 {
+    margin: 0;
+    text-align: center;
+    }
+    
+    ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    nav a:hover {
+        color: aqua;
+      }
+    
+    
+    button {
+    background-color: #160094;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 20px;
+    }
+    button:hover{
+      background-color: #7158ff;
+      transition: 0.5s;
+    }
+    
+ 
+    header {
+        background-color: #160094;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+    header h1 {
+       margin-left: 200px;
+       font-size: 3rem;
+        }
+ 
+    nav ul {
+    display: flex;
+    list-style: none;
+    }
+    
+    nav ul li {
+    margin: 0 10px;
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+   
+   .logo{
+        width: 100px; 
+        height: auto; 
+      }
+
+     
+    #banner {
+    margin-top: 120px;
+    background-image: url('images/banner.jpg' );
+    max-width: 100%; 
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #000000;
+    padding: 100px 40px;
+    }
+   #carta{
+  margin: 25px;}
+   #banner img{width: 150px;}
+    #banner h2{
+      margin-top: auto;
+        font-size: 2.5rem;
+    }
+    #banner h3{
+      margin-top: auto;
+        font-size: 1.5rem;
+    }
+    
+  #productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #carta{
+    width: 18rem;
+    margin-bottom: 1rem;
+  }
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    }
+   .usuario{
+    color: rgb(108, 127, 153);
+   }
+    .tachado {
+      text-decoration: line-through;
+  }
+@media only screen and (max-width: 480px) {
+    header h1 {
+      margin-left: 0;
+      font-size: 2rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav ul li {
+      margin: 10px 0;
+    }
+    
+    #productos li {
+      padding: 20px;
+    }
+    
+    #productos img {
+      width: 100%;
+    }
+    
+    #productos button {
+      margin: 10px 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+   
+
+  }
+
+  

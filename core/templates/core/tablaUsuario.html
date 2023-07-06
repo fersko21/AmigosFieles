@@ -1,0 +1,50 @@
+{% extends 'core/base.html' %}
+{%load static%}
+{%block head%}
+<link rel="stylesheet" href="{%static 'tablaUsuarioEstilo.css'%}"> 
+{%endblock%}
+{%block content%}
+<body>
+    <table>
+            <tr>
+                <th>RUN</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Telefono celular</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <button>Agregar usuario</button>
+            <tr>
+                <td>1.010.420-2</td>
+                <td>Felipes Alvergado</td>
+                <td>fel.alvarado@duocuc.cl</td>
+                <td>+569 69696969</td>
+                <td><button><img src={%static 'images/edit.png'%} alt="edit"></button></td>
+                <td><button><img src={%static 'images/delete.png'%} alt="delete"></button></td>
+            </tr>
+            <tr>
+                <td>21.010.420-8</td>
+                <td>Rodrigo Veloso</td>
+                <td>rodr.veloso@duocuc.cl</td>
+                <td>+569 34265451</td>
+                <td><button><img src={%static 'images/edit.png'%} alt="edit"></button></td>
+                <td><button><img src={%static 'images/delete.png'%} alt="delete"></button></td>
+            </tr>
+            <tr>
+                <td>21.010.420-8</td>
+                <td>Willy Castrado</td>
+                <td>willy.castrado@duocuc.cl</td>
+                <td>+569 13131313</td>
+                <td><button><img src={%static 'images/edit.png'%} alt="edit"></button></td>
+                <td><button><img src={%static 'images/delete.png'%} alt="delete"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
+{%endblock%}
+  

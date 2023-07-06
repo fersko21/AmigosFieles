@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+{%load static%}
+{%block head%}
+<link rel="stylesheet" href="{%static 'tablaproductos.css'%}"> 
+{%endblock%}
+{%block content%}
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Descripción</th>
+                <th>Stock</th>
+                <th>Imagen</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <button>Agregar producto</button>
+            <tr>
+                <td>01</td>
+                <td>Bandana de moda</td>
+                <td>$12.000</td>
+                <td>¡Haz que tu mascota luzca increíble con nuestra nueva colección de bandanas!.</td>
+                <td>15</td>
+                <td><img src={%static 'images/bandana.png'%}  alt="Producto 1"></td>
+                <td><button><img src={%static 'images/edit.png'%} alt="edit"></button></td>
+                <td><button><img src={%static 'images/delete.png'%} alt="delete"></button></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Correa ajustable</td>
+                <td>$6.000</td>
+                <td>Correa ajustable Pasea a tu mascota con estilo con nuestras correas ajustables de alta calidad. Disponibles en varios colores y tamaños. </td>
+                <td>15</td>
+                <td><img src={%static 'images/correa.png'%}  alt="Producto 2"></td>
+                <td><button><img src={%static 'images/edit.png'%} alt="edit"></button></td>
+                <td><button><img src={%static 'images/delete.png'%} alt="delete"></button></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Identificación personalizada</td>
+                <td>$15.000</td>
+                <td>Mantén a tu mascota segura con nuestras identificaciones personalizadas, grabadas con su nombre y tu número de teléfono.</td>
+                <td>15</td>
+                <td><img src={%static 'images/identificación.png'%}   alt="Producto 3"> </td>
+                <td><button><img src={%static 'images/edit.png'%} alt="edit"></button></td>
+                <td><button><img src={%static 'images/delete.png'%} alt="delete"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    {%endblock%}
+  
+

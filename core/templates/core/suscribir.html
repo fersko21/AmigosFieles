@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{%load static%}
+{%block head%}
+<link rel="stylesheet" href="{%static 'loginestilo.css'%}"> 
+{%endblock%}
+
+
+
+{% block content %}
+        <h1>Suscribete a la fundacion</h1>
+        <section id="login">
+           {%if suscrito%}
+             <h3>Felicidades, estas Suscrito.</h3>
+             <p></p>
+             <h3>Disfruta de tus beneficios ayudando </h3>
+             <h3>a nuestra fundacion.</h3>
+           {%else%}
+           <h3>Suscribete y disfruta de los beneficios.</h3>
+           <form action="{%url 'suscribir'%}" method="post">
+            {%csrf_token%}
+            <button type="submit">Suscribete</button>
+           </form>
+           
+           {%endif%}
+            
+        </section>
+{% endblock %}
+
+
+
+

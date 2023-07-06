@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{%block head%}
+<link rel="stylesheet" href="{%static 'loginestilo.css'%}"> 
+{%endblock%}
+{% load crispy_forms_tags %}
+
+{% block content %}
+        <h1>Crear Cuenta</h1>
+        <section id="login">
+            <form method="post">
+                {% csrf_token %}
+                {{ form   }}
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+                {% comment %} {{messages}} {% endcomment %}
+            </form>
+        </section>
+{% endblock %}

@@ -1,0 +1,102 @@
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  img{
+    width: 25px;
+    height: 25px;
+
+  }
+  td>img{
+    width: 100px;
+    height: 100px;
+  }
+  .usuario{
+    color: rgb(108, 127, 153);
+   }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #160094;
+    color: white;
+  }
+  
+  header {
+    background-color: #160094;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-right: 60px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: aqua;
+  }
+  
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+
+      button{
+        background-color: #160094;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 20px;
+        }
+
+        td > button{
+          background-color:#f9f9f9; ;
+          border: none;
+          padding: 10px 20px;
+          margin: 10px 0;
+          cursor: pointer;
+          }
+    
+          button:hover {
+            background-color: #7158ff;
+            transition: 0.5s;
+          }
+          h1, h2, h3 {
+            margin: 0;
+            text-align: center;
+            }

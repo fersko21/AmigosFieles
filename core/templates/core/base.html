@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<title>Amigos Fieles</title>
+	
+    {%block head%}
+    {%endblock%}
+</head>
+<body>
+	<header>
+        <img class="logo" src="{% static 'images/Logo.png' %}" alt="Logo de la tienda">
+		<h1>Amigos Fieles</h1>
+		
+		<nav>
+			<ul>
+				{% if user.is_authenticated %}
+					<div class="usuario"> Usuario: {{user.username}}</div>
+					{% if suscrito %}
+                        ✨
+					{%else%}
+					
+					{%endif%}
+					
+					<li><a href="{%url 'logout'%}">Cerrar sesión</a></li>
+				{% else %}
+					<li><a href="{%url 'login'%} ">Cuenta</a></li>
+				{% endif %}
+				    
+					<li><a href="{% url 'home' %}">Inicio</a></li>
+					<li><a href="{%url 'historial'%} ">Historial</a></li>
+					<li><a href="{%url 'suscribir'%} ">Suscribir</a></li>
+					<li><a href="{%url 'carrito'%} ">Carrito</a></li>
+                
+               
+			</ul>
+		</nav>
+	</header>
+
+    {% block content %}
+	
+    {% endblock  %}
+	
+ 
